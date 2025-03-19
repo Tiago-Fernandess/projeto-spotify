@@ -72,7 +72,7 @@ const Player = ({
           <FontAwesomeIcon
             className="player__icon"
             icon={faBackwardStep}
-            onClick={setIsPlaying(false)}
+            onClick={() => setIsPlaying(false)}
           />
         </Link>
 
@@ -86,7 +86,7 @@ const Player = ({
           <FontAwesomeIcon
             className="player__icon"
             icon={faForwardStep}
-            onClick={setIsPlaying(false)}
+            onClick={() => setIsPlaying(false)}
           />
         </Link>
       </div>
