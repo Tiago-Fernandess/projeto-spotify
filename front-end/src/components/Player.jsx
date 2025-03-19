@@ -52,6 +52,13 @@ const Player = ({
   };
 
   useEffect(() => {
+    setCurrentTime(formatTime(0)); // Reseta o tempo exibido
+    if (audioPlayer.current) {
+      audioPlayer.current.currentTime = 0; // Reseta o tempo do áudio
+    }
+  }, [audio]); // Executa sempre que a música muda
+
+  useEffect(() => {
     const intervalId = setInterval(() => {
       if (isPlaying)
         setCurrentTime(formatTime(audioPlayer.current.currentTime));
