@@ -70,6 +70,10 @@ const Player = ({
       <div className="player__controllers">
         <Link to={`/song/${randomIdFromArtist}`}>
           <FontAwesomeIcon className="player__icon" icon={faBackwardStep} />
+          <FontAwesomeIcon
+            className="player__icon player__icon--play"
+            icon={faCirclePause}
+          ></FontAwesomeIcon>
         </Link>
 
         <FontAwesomeIcon
@@ -80,6 +84,10 @@ const Player = ({
 
         <Link to={`/song/${randomId2FromArtist}`}>
           <FontAwesomeIcon className="player__icon" icon={faForwardStep} />
+          <FontAwesomeIcon
+            className="player__icon player__icon--play"
+            icon={faCirclePause}
+          ></FontAwesomeIcon>
         </Link>
       </div>
 
