@@ -1,7 +1,7 @@
 // Fetch ou Axios
 import axios from "axios";
 
-const URL = "http://localhost:3000";
+const URL = "https://projeto-spotify-li5x.onrender.com/3000";
 
 const responseArtists = await axios.get(`${URL}/artists`);
 const responseSongs = await axios.get(`${URL}/songs`);
